@@ -2,7 +2,14 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import { FaGraduationCap } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
-import { mentors, person } from "../Data";
+import { MdOutlineArrowOutward } from "react-icons/md";
+import { MdOutlineCategory } from "react-icons/md";
+import { FaDollarSign } from "react-icons/fa";
+import { RiCheckboxMultipleBlankLine } from "react-icons/ri";
+import { MdOutlineAnalytics } from "react-icons/md";
+import { FaCode } from "react-icons/fa";
+import { BiCategoryAlt } from "react-icons/bi";
+import {  mentors, person } from "../Data";
 
 function Home() {
   return (
@@ -102,6 +109,36 @@ function Home() {
                   </div>
                 </div>
               ))}
+            </div>
+            <div className="mt-5">
+              <button className="flex items-center gap-3 px-4 py-3 bg-green-700 text-white font-bold rounded-full">
+                View all mentors{" "}
+                <MdOutlineArrowOutward className="text-3xl font-bold bg-white text-black rounded-full " />{" "}
+              </button>
+            </div>
+            <div className="mt-10">
+              <h1 className="text-2xl md:text-6xl font-bold">Become In Demand On the </h1>
+              <h1 className="text-2xl md:text-6xl font-bold">Job Market Today !</h1>
+            </div>
+            <div className="flex flex-wrap justify-center gap-5 md:gap-8 mt-10">
+              <button className="flex items-center gap-3 px-4 py-3 rounded-full bg-green-600 text-white text-xl font-bold">
+                <BiCategoryAlt /> categories
+              </button>
+              <button className="flex items-center gap-3 px-4 py-3 rounded-full  border-2 text-xl font-bold">
+                <FaCode /> Development
+              </button>
+              <button className="flex items-center gap-3 px-4 py-3 rounded-full border-2 text-xl font-bold">
+                <MdOutlineCategory /> UI/UX Design
+              </button>
+              <button className="flex items-center gap-3 px-4 py-3 rounded-full border-2 text-xl font-bold">
+                <RiCheckboxMultipleBlankLine /> Project Management
+              </button>
+              <button className="flex items-center gap-3 px-4 py-3 rounded-full border-2 text-xl font-bold">
+                <FaDollarSign /> Accounting
+              </button>
+              <button className="flex items-center gap-3 px-4 py-3 rounded-full border-2 text-xl font-bold">
+                <MdOutlineAnalytics /> Marketing
+              </button>
             </div>
           </center>
         </div>

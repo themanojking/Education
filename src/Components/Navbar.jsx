@@ -38,7 +38,7 @@ const Navbar = () => {
           <div className=" bg-white rounded-lg px-2">
             <input
               type="text"
-              placeholder="Search Your Destination.."
+              placeholder="Search Your Course.."
               className="outline-none"
             />
           </div>

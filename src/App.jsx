@@ -7,6 +7,7 @@ import Mentors from './Pages/Mentors'
 import Blogs from './Pages/Blogs'
 import AboutUs from './Pages/AboutUs'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Development from './Pages/Jobs/Development'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/mentors' element={<Mentors />}></Route>
           <Route path='/blogs' element={<Blogs />}></Route>
           <Route path='/aboutus' element={<AboutUs />}></Route>
+          <Route path='/development' element={<Development />}></Route>
         </Routes>
        
       </BrowserRouter>

@@ -17,12 +17,15 @@ import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
 import Faq from "../Components/Faq";
 import Dream from "../Components/Dream";
+import WhyChooseUs from "../Components/Choose";
+
 
 function Home() {
   return (
     <>
-      <Navbar />
-      <div className="">
+    <div>
+      <div >
+        <Navbar />
         <div>
           <center className=" mt-10 md:mt-20">
             <div className="flex justify-center items-center gap-3 bg-red-500 w-[80%] md:w-[40%] lg:w-[20%] rounded-full p-2">
@@ -56,7 +59,7 @@ function Home() {
                 <div className="flex justify-around items-center gap-3 p-2 border-2 border-gray-500 rounded-full mx-10 md:mx-0 md:w-[50%] lg:w-[30%] mt-4 md:mt-8">
                   <input
                     placeholder="e.g. FullStack Developer"
-                    className="outline-none"
+                    className="outline-none bg-transparent"
                   />
                   <IoIosSearch className="text-2xl" />
                 </div>
@@ -79,43 +82,45 @@ function Home() {
                 </div>
               ))}
             </div>
-            <div className="mt-5">
-              <h1 className="text-2xl md:text-5xl font-bold">
-                Meet the Next Generation of{" "}
-              </h1>
-              <h1 className="text-2xl md:text-5xl font-bold">
-                Masterful Mentors
-              </h1>
-            </div>
-            <div className="mt-3 md:mt-5 -space-y-1">
-              <h3 className="text-lg text-gray-500 md:max-w-[75%] ">
-                Connect with the next wave of expert mentors, guiding you with
-                fresh perspectives, innovative insights, and proven expertise.
-              </h3>
-            </div>
-            <div className="flex flex-wrap justify-center items-center gap-5 lg:gap-10 mt-10 p-2 ">
-              {mentors.map((men) => (
-                <div className="border-2 border-gray-400 rounded-2xl  p-4 md:w-[45%] lg:w-[30%]">
-                  <img
-                    style={{ backgroundColor: men.colors }}
-                    className="w-[30%] rounded-full "
-                    src={men.img}
-                  ></img>
-                  <h1 className="text-xl font-bold mt-2">{men.name}</h1>
-                  <h3 className="text-lg font-semibold">{men.role}</h3>
-                  <div className="flex justify-center gap-4 mt-5">
-                    <button className="px-5 py-2 border-2 rounded-full text-sm lg:text-lg ">
-                      {men.caption1}
-                    </button>
-                    <button className="px-5 py-2 border-2 rounded-full text-sm lg:text-lg ">
-                      {men.caption2}
-                    </button>
-                    <button className="px-5 py-2 border-2 rounded-full text-sm lg:text-lg ">
-                      {men.caption3}
-                    </button>
+            <div className="">
+              <div className="mt-5 ">
+                <h1 className="text-2xl md:text-5xl font-bold">
+                  Meet the Next Generation of{" "}
+                </h1>
+                <h1 className="text-2xl md:text-5xl font-bold">
+                  Masterful Mentors
+                </h1>
+              </div>
+              <div className="mt-3 md:mt-5 -space-y-1">
+                <h3 className="text-lg text-gray-500 md:max-w-[75%] ">
+                  Connect with the next wave of expert mentors, guiding you with
+                  fresh perspectives, innovative insights, and proven expertise.
+                </h3>
+              </div>
+              <div className="flex flex-wrap justify-center items-center gap-5 lg:gap-10 mt-10 p-2 ">
+                {mentors.map((men) => (
+                  <div className="border-2 border-gray-400 rounded-2xl  p-4 md:w-[45%] lg:w-[30%]">
+                    <img
+                      style={{ backgroundColor: men.colors }}
+                      className="w-[30%] rounded-full "
+                      src={men.img}
+                    ></img>
+                    <h1 className="text-xl font-bold mt-2">{men.name}</h1>
+                    <h3 className="text-lg font-semibold">{men.role}</h3>
+                    <div className="flex justify-center gap-4 mt-5">
+                      <button className="px-5 py-2 border-2 rounded-full text-sm lg:text-lg ">
+                        {men.caption1}
+                      </button>
+                      <button className="px-5 py-2 border-2 rounded-full text-sm lg:text-lg ">
+                        {men.caption2}
+                      </button>
+                      <button className="px-5 py-2 border-2 rounded-full text-sm lg:text-lg ">
+                        {men.caption3}
+                      </button>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
             <div className="mt-5">
               <button className="flex items-center gap-3 px-4 py-3 bg-green-700 text-white font-bold rounded-full">
@@ -132,12 +137,16 @@ function Home() {
               </h1>
             </div>
             <div className="flex flex-wrap justify-center gap-5 md:gap-8 mt-10">
-              <Link to='/categories'><button className="flex items-center gap-3 px-4 py-3 rounded-full bg-green-600 text-white text-xl font-bold">
-                <BiCategoryAlt /> categories
-              </button></Link>
-              <Link to='/development'><button className="flex items-center gap-3 px-4 py-3 rounded-full  border-2 text-xl font-bold">
-                <FaCode /> Development
-              </button></Link>
+              <Link to="/categories">
+                <button className="flex items-center gap-3 px-4 py-3 rounded-full bg-green-600 text-white text-xl font-bold">
+                  <BiCategoryAlt /> categories
+                </button>
+              </Link>
+              <Link to="/development">
+                <button className="flex items-center gap-3 px-4 py-3 rounded-full  border-2 text-xl font-bold">
+                  <FaCode /> Development
+                </button>
+              </Link>
               <button className="flex items-center gap-3 px-4 py-3 rounded-full border-2 text-xl font-bold">
                 <MdOutlineCategory /> UI/UX Design
               </button>
@@ -168,7 +177,9 @@ function Home() {
                       </h2>
                     </div>
                   </div>
-                  <h1 className="flex justify-start ml-5 text-xl font-bold">{job.role}</h1>
+                  <h1 className="flex justify-start ml-5 text-xl font-bold">
+                    {job.role}
+                  </h1>
                   <div className="flex justify-evenly gap-28 mt-3 text-gray-600 font-semibold p-2">
                     <h4 className="flex justify-center items-center gap-3">
                       <IoMdTime /> {job.week}
@@ -180,9 +191,16 @@ function Home() {
                 </div>
               ))}
             </div>
+            <div>
+              <WhyChooseUs />
+            </div>
             <div className="mt-10 space-y-2">
-                <h1 className="text-xl md:text-5xl font-bold">Key Takeaways from Successful</h1>
-                <h1 className="text-xl lg:text-5xl font-bold">Graduate Experiences</h1>
+              <h1 className="text-xl md:text-5xl font-bold">
+                Key Takeaways from Successful
+              </h1>
+              <h1 className="text-xl lg:text-5xl font-bold">
+                Graduate Experiences
+              </h1>
             </div>
             <div>
               <Faq />
@@ -193,6 +211,7 @@ function Home() {
             <Footer />
           </div>
         </div>
+      </div>
       </div>
     </>
   );

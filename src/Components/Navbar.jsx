@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="bg-white sm:py-[16px] sm:px-[48px] py-2 px-8 flex justify-between items-center shadow-2xl flex-wrap rounded-b-3xl ">
+      <div className="bg-transparent sm:py-[16px] sm:px-[48px] py-2 px-8 flex justify-between items-center shadow-2xl flex-wrap rounded-b-3xl ">
         <div className="text-lg font-bold w-[200px] max-sm:w-[160px]">
           <h1>Education</h1>
         </div>

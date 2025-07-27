@@ -188,9 +188,10 @@ function Home() {
               <Faq />
             </div>
             <Dream />
-            <Footer />
-            
           </center>
+          <div className="mt-10">
+            <Footer />
+          </div>
         </div>
       </div>
     </>

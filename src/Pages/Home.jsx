@@ -3,21 +3,13 @@ import Navbar from "../Components/Navbar";
 import { FaGraduationCap } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import { IoMdTime } from "react-icons/io";
-import { HiOutlineDocumentText } from "react-icons/hi";
-import { MdOutlineCategory } from "react-icons/md";
-import { FaDollarSign } from "react-icons/fa";
-import { RiCheckboxMultipleBlankLine } from "react-icons/ri";
-import { MdOutlineAnalytics } from "react-icons/md";
-import { FaCode } from "react-icons/fa";
-import { BiCategoryAlt } from "react-icons/bi";
-import { IoCartOutline } from "react-icons/io5";
-import { jobs, mentors, person } from "../Utility/Data";
-import { Link } from "react-router-dom";
+import { mentors, person } from "../Utility/Data";
+
 import Footer from "../Components/Footer";
 import Faq from "../Components/Faq";
 import Dream from "../Components/Dream";
 import WhyChooseUs from "../Components/Choose";
+import Categories from "../Components/Categories";
 
 
 function Home() {
@@ -128,68 +120,8 @@ function Home() {
                 <MdOutlineArrowOutward className="text-3xl font-bold bg-white text-black rounded-full " />{" "}
               </button>
             </div>
-            <div className="mt-10">
-              <h1 className="text-2xl md:text-6xl font-bold">
-                Become In Demand On the{" "}
-              </h1>
-              <h1 className="text-2xl md:text-6xl font-bold">
-                Job Market Today !
-              </h1>
-            </div>
-            <div className="flex flex-wrap justify-center gap-5 md:gap-8 mt-10">
-              <Link to="/categories">
-                <button className="flex items-center gap-3 px-4 py-3 rounded-full bg-green-600 text-white text-xl font-bold">
-                  <BiCategoryAlt /> categories
-                </button>
-              </Link>
-              <Link to="/development">
-                <button className="flex items-center gap-3 px-4 py-3 rounded-full  border-2 text-xl font-bold">
-                  <FaCode /> Development
-                </button>
-              </Link>
-              <button className="flex items-center gap-3 px-4 py-3 rounded-full border-2 text-xl font-bold">
-                <MdOutlineCategory /> UI/UX Design
-              </button>
-              <button className="flex items-center gap-3 px-4 py-3 rounded-full border-2 text-xl font-bold">
-                <RiCheckboxMultipleBlankLine /> Project Management
-              </button>
-              <button className="flex items-center gap-3 px-4 py-3 rounded-full border-2 text-xl font-bold">
-                <FaDollarSign /> Accounting
-              </button>
-              <button className="flex items-center gap-3 px-4 py-3 rounded-full border-2 text-xl font-bold">
-                <MdOutlineAnalytics /> Marketing
-              </button>
-            </div>
-            <div className="flex flex-wrap  justify-center items-center gap-10 mt-14 ">
-              {jobs.map((job) => (
-                <div className="border-2 w-[90%] md:w-[40%] lg:w-[30%] rounded-xl">
-                  <img src={job.img} className=""></img>
-                  <div className="flex justify-between mt-2 p-4">
-                    <div>
-                      <button className="px-3 py-2 border-2 rounded bg-gray-500 text-white font-semibold">
-                        {job.caption1}
-                      </button>
-                    </div>
-                    <div className="flex justify-center items-center gap-10">
-                      <IoCartOutline className="bg-green-600 p-1 text-white text-4xl font-bold rounded" />
-                      <h2 className="text-xl text-green-600 font-semibold">
-                        {job.rate}
-                      </h2>
-                    </div>
-                  </div>
-                  <h1 className="flex justify-start ml-5 text-xl font-bold">
-                    {job.role}
-                  </h1>
-                  <div className="flex justify-evenly gap-28 mt-3 text-gray-600 font-semibold p-2">
-                    <h4 className="flex justify-center items-center gap-3">
-                      <IoMdTime /> {job.week}
-                    </h4>
-                    <h4 className="flex justify-center items-center gap-3">
-                      <HiOutlineDocumentText /> {job.lectures}
-                    </h4>
-                  </div>
-                </div>
-              ))}
+            <div>
+              <Categories />
             </div>
             <div>
               <WhyChooseUs />

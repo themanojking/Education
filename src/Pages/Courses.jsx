@@ -1,12 +1,13 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
+import Categories from '../Components/Categories'
 
 function Courses() {
   return (
     <>
      <Navbar />
-      <div>
-        <h1>Courses</h1>
+      <div className='mt-40'>
+        <Categories />
       </div>
     </>
   )

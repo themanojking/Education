@@ -4,7 +4,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { CgProfile } from "react-icons/cg";
 import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -20,19 +20,35 @@ const Navbar = () => {
         </div>
         <div className="nav-items max-lg:hidden">
           <ul className=" flex gap-6 text-lg cursor-pointer font-bold ">
-            <Link to='/'><li className="hover:text-[#FD5C56]">Home</li></Link>
-            <Link to='/pages'><li className="hover:text-[#FD5C56]">Pages</li></Link>
-            <Link to='/courses'><li className="hover:text-[#FD5C56]">Courses</li></Link>
-            <Link to='/mentors'><li className="hover:text-[#FD5C56]">Mentors</li></Link>
-            <Link to='/blogs'><li className="hover:text-[#FD5C56]">Blogs</li></Link>
-            <Link to='/aboutus'><li className="hover:text-[#FD5C56]">About Us</li></Link>
+            <Link to="/">
+              <li className="hover:text-[#FD5C56]">Home</li>
+            </Link>
+            <Link to="/pages">
+              <li className="hover:text-[#FD5C56]">Pages</li>
+            </Link>
+            <Link to="/courses">
+              <li className="hover:text-[#FD5C56]">Courses</li>
+            </Link>
+            <Link to="/mentors">
+              <li className="hover:text-[#FD5C56]">Mentors</li>
+            </Link>
+            <Link to="/blogs">
+              <li className="hover:text-[#FD5C56]">Blogs</li>
+            </Link>
+            <Link to="/aboutus">
+              <li className="hover:text-[#FD5C56]">About Us</li>
+            </Link>
           </ul>
         </div>
         <div className="sm:hidden cursor-pointer">
           <CgProfile className="text-3xl" />
         </div>
         <div className="md:hidden">
-          {!open ? <IoMdMenu className="text-3xl" onClick={onclick} /> :  <IoMdClose className="text-3xl" onClick={onclick} />}
+          {!open ? (
+            <IoMdMenu className="text-3xl" onClick={onclick} />
+          ) : (
+            <IoMdClose className="text-3xl" onClick={onclick} />
+          )}
         </div>
         <div className="flex justify-around items-center border-1 rounded-lg border-gray-600  space-x-2 max-sm:my-4">
           <div className=" bg-white rounded-lg px-2">
@@ -56,12 +72,17 @@ const Navbar = () => {
           <IoMdMenu className="text-3xl" onClick={onclick} />
         </div>
         <div className="space-x-4 max-lg:hidden">
-          <button className="text-lg font-bold border-2 border-white hover:border-[#FD5C56] py-[6px] px-[20px] rounded-lg cursor-pointer">
-            Login
-          </button>
-          <button className="bg-[#FD5C56] py-[6px] px-[20px] rounded-lg text-lg text-white font-bold cursor-pointer">
-            SignUp
-          </button>
+          <Link to="/signin">
+            {" "}
+            <button className="text-lg font-bold border-2 border-white hover:border-[#FD5C56] py-[6px] px-[20px] rounded-lg cursor-pointer">
+              Signin
+            </button>
+          </Link>
+          <Link to="/signup">
+            <button className="bg-[#FD5C56] py-[6px] px-[20px] rounded-lg text-lg text-white font-bold cursor-pointer">
+              SignUp
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -71,18 +92,30 @@ const Navbar = () => {
           open ? "" : "hidden"
         }`}
       >
-        <div className="flex justify-between items-center mx-4 my-2"> 
+        <div className="flex justify-between items-center mx-4 my-2">
           <h1 className="text-lg font-bold w-[150px]">Education</h1>
           <IoMdClose className="text-3xl" onClick={onclick} />
         </div>
-        <hr className="w-[90%] m-auto text-gray-500ccnn"/>
+        <hr className="w-[90%] m-auto text-gray-500ccnn" />
         <ul className="decoration-none text-lg cursor-pointer font-bold space-y-4 text-center mt-4 mx-4">
-          <Link to='/'><li className="hover:bg-[#FD5C56] hover:text-white">Home</li></Link>
-          <Link to='/pages'><li className="hover:bg-[#FD5C56] hover:text-white">Pages</li></Link>
-          <Link to='/courses'><li className="hover:bg-[#FD5C56] hover:text-white">Courses</li></Link>
-          <Link to='/mentors'><li className="hover:bg-[#FD5C56] hover:text-white">Mentors</li></Link>
-          <Link to='/blogs'><li className="hover:bg-[#FD5C56] hover:text-white">Blogs</li></Link>
-          <Link to='/aboutus'><li className="hover:bg-[#FD5C56] hover:text-white">About Us</li></Link>
+          <Link to="/">
+            <li className="hover:bg-[#FD5C56] hover:text-white">Home</li>
+          </Link>
+          <Link to="/pages">
+            <li className="hover:bg-[#FD5C56] hover:text-white">Pages</li>
+          </Link>
+          <Link to="/courses">
+            <li className="hover:bg-[#FD5C56] hover:text-white">Courses</li>
+          </Link>
+          <Link to="/mentors">
+            <li className="hover:bg-[#FD5C56] hover:text-white">Mentors</li>
+          </Link>
+          <Link to="/blogs">
+            <li className="hover:bg-[#FD5C56] hover:text-white">Blogs</li>
+          </Link>
+          <Link to="/aboutus">
+            <li className="hover:bg-[#FD5C56] hover:text-white">About Us</li>
+          </Link>
         </ul>
       </div>
     </nav>

@@ -7,7 +7,8 @@ import Mentors from './Pages/Mentors'
 import Blogs from './Pages/Blogs'
 import AboutUs from './Pages/AboutUs'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Development from './Pages/Jobs/Development'
+import Signup from './Authenticate/Signup'
+import Signin from './Authenticate/Signin'
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           <Route path='/mentors' element={<Mentors />}></Route>
           <Route path='/blogs' element={<Blogs />}></Route>
           <Route path='/aboutus' element={<AboutUs />}></Route>
-          <Route path='/development' element={<Development />}></Route>
+          <Route path='/signup' element={<Signup />}></Route>
+          <Route path='/signin' element={<Signin />}></Route>
         </Routes>
        
       </BrowserRouter>

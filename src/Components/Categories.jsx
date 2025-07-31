@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { jobs } from "../Utility/Data";
+import { jobs,categories } from "../Utility/Data";
 import JobCard from "./JobCard";
 
 function Categories() {
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState(categories[0].name);
 
   // Filter jobs by category
   const filteredJobs =
@@ -11,7 +11,7 @@ function Categories() {
       ? jobs
       : jobs.filter((job) => job.category === selectedCategory);
 
-  const categories = ["All", "Development", "UI/UX Design", "Marketing","Accounting"];
+  
 
   return (
     <div className="p-6">
@@ -20,14 +20,14 @@ function Categories() {
         {categories.map((cat, index) => (
           <button
             key={index}
-            onClick={() => setSelectedCategory(cat)}
+            onClick={() => setSelectedCategory(cat.name)}
             className={`flex items-center gap-2 px-4 py-2 rounded-full font-bold text-lg ${
-              selectedCategory === cat
+              selectedCategory === cat.name
                 ? "bg-green-600 text-white"
                 : "border-2 text-gray-700"
             }`}
           >
-            {cat}
+            {cat.icon} {cat.name}
           </button>
         ))}
       </div>

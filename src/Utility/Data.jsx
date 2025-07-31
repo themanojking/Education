@@ -1,3 +1,15 @@
+import { TbCategory2 } from "react-icons/tb";
+import { FaCode } from "react-icons/fa";
+import { FaArtstation } from "react-icons/fa6";
+import { MdOutlineAnalytics } from "react-icons/md";
+import { LuBadgeDollarSign } from "react-icons/lu";
+import {
+  FaTwitter,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
+
 export const person = [
   {
     id: "1",
@@ -146,7 +158,7 @@ export const jobs = [
     week: "4 weeks",
     lectures: "18 lectures",
   },
-   {
+  {
     id: 18,
     category: "Development",
     img: "/assets/digitalmarket.jpg",
@@ -156,7 +168,7 @@ export const jobs = [
     week: "4 weeks",
     lectures: "18 lectures",
   },
-   {
+  {
     id: 19,
     category: "Development",
     img: "/assets/ai2.jpg",
@@ -176,7 +188,7 @@ export const jobs = [
     week: "2 weeks",
     lectures: "30 lectures",
   },
-   {
+  {
     id: 21,
     category: "Accounting",
     img: "/assets/stakeholdermanage.webp",
@@ -196,7 +208,7 @@ export const jobs = [
     week: "1 month",
     lectures: "30 lectures",
   },
-   {
+  {
     id: 23,
     category: "Marketing",
     img: "/assets/emailmarkettech.webp",
@@ -206,7 +218,7 @@ export const jobs = [
     week: "1 month",
     lectures: "30 lectures",
   },
-   {
+  {
     id: 24,
     category: "Marketing",
     img: "/assets/googleads.webp",
@@ -216,9 +228,7 @@ export const jobs = [
     week: "1 month",
     lectures: "30 lectures",
   },
-   
 ];
-
 
 export const faq = [
   {
@@ -246,4 +256,150 @@ export const faq = [
     answers:
       "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.",
   },
+];
+
+export const Bestmentors = [
+  {
+    name: "Matthew Ryan",
+    role: "Product Designer",
+    img: "/assets/mentor1.png",
+  },
+  {
+    name: "James Michael",
+    role: "Digital Marketer",
+    img: "/assets/mentor2.png",
+  },
+  {
+    name: "Daniel Joseph",
+    role: "Software Engineer",
+    img: "/assets/mentor3.png",
+  },
+  {
+    name: "Anthony Mark",
+    role: "Project Manager",
+    img: "/assets/mentor4.png",
+  },
+];
+
+export const categories = [
+  {
+    name: "All",
+    icon: <TbCategory2 />,
+  },
+  {
+    name: "Development",
+    icon: <FaCode />,
+  },
+  {
+    name: "UI/UX Design",
+    icon: <FaArtstation />,
+  },
+  {
+    name: "Marketing",
+    icon: <MdOutlineAnalytics />,
+  },
+  {
+    name: "Accounting",
+    icon: <LuBadgeDollarSign />,
+  },
+];
+
+export const teamMembers = [
+  {
+    name: "Robert David",
+    role: "UI/UX Designer",
+    img: "/assets/mentor1.png",
+    bgcolor: "#FCEEDF",
+    socials: [
+      { icon: <FaTwitter />, link: "#" },
+      { icon: <FaFacebookF />, link: "#" },
+      { icon: <FaLinkedinIn />, link: "#" },
+      { icon: <FaInstagram />, link: "#" },
+    ],
+  },
+  {
+    name: "Ethan Samuel",
+    role: "Software Engineer",
+    img: "/assets/mentor2.png",
+    bgcolor: "",
+    socials: [
+      { icon: <FaTwitter />, link: "#" },
+      { icon: <FaFacebookF />, link: "#" },
+      { icon: <FaLinkedinIn />, link: "#" },
+      { icon: <FaInstagram />, link: "#" },
+    ],
+  },
+  {
+    name: "Ethan Samuel",
+    role: "Software Engineer",
+    img: "/assets/mentor3.png",
+    bgcolor: "",
+    socials: [
+      { icon: <FaTwitter />, link: "#" },
+      { icon: <FaFacebookF />, link: "#" },
+      { icon: <FaLinkedinIn />, link: "#" },
+      { icon: <FaInstagram />, link: "#" },
+    ],
+  },
+  {
+    name: "Ethan Samuel",
+    role: "Software Engineer",
+    img: "/assets/mentor4.png",
+    bgcolor: "",
+    socials: [
+      { icon: <FaTwitter />, link: "#" },
+      { icon: <FaFacebookF />, link: "#" },
+      { icon: <FaLinkedinIn />, link: "#" },
+      { icon: <FaInstagram />, link: "#" },
+    ],
+  },
+  {
+    name: "Ethan Samuel",
+    role: "Software Engineer",
+    img: "/assets/mentor5.png",
+    bgcolor: "",
+    socials: [
+      { icon: <FaTwitter />, link: "#" },
+      { icon: <FaFacebookF />, link: "#" },
+      { icon: <FaLinkedinIn />, link: "#" },
+      { icon: <FaInstagram />, link: "#" },
+    ],
+  },
+  {
+    name: "Ethan Samuel",
+    role: "Software Engineer",
+    img: "/assets/mentor6.png",
+    bgcolor: "",
+    socials: [
+      { icon: <FaTwitter />, link: "#" },
+      { icon: <FaFacebookF />, link: "#" },
+      { icon: <FaLinkedinIn />, link: "#" },
+      { icon: <FaInstagram />, link: "#" },
+    ],
+  },
+  {
+    name: "Ethan Samuel",
+    role: "Software Engineer",
+    img: "/assets/mentor7.png",
+    bgcolor: "",
+    socials: [
+      { icon: <FaTwitter />, link: "#" },
+      { icon: <FaFacebookF />, link: "#" },
+      { icon: <FaLinkedinIn />, link: "#" },
+      { icon: <FaInstagram />, link: "#" },
+    ],
+  },
+  {
+    name: "Ethan Samuel",
+    role: "Software Engineer",
+    img: "/assets/mentor8.png",
+    bgcolor: "",
+    socials: [
+      { icon: <FaTwitter />, link: "#" },
+      { icon: <FaFacebookF />, link: "#" },
+      { icon: <FaLinkedinIn />, link: "#" },
+      { icon: <FaInstagram />, link: "#" },
+    ],
+  },
+  // Add more members here
 ];

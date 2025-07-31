@@ -1,29 +1,9 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
+import { Bestmentors } from "../Utility/Data";
 
 const MentorsSection = () => {
-  const mentors = [
-    {
-      name: "Matthew Ryan",
-      role: "Product Designer",
-      img: "/assets/mentor1.png",
-    },
-    {
-      name: "James Michael",
-      role: "Digital Marketer",
-      img: "/assets/mentor2.png",
-    },
-    {
-      name: "Daniel Joseph",
-      role: "Software Engineer",
-      img: "/assets/mentor3.png",
-    },
-    {
-      name: "Anthony Mark",
-      role: "Project Manager",
-      img: "/assets/mentor4.png",
-    },
-  ];
+  
 
   return (
     <section className="bg-gray-50 py-12 px-6 md:px-16">
@@ -42,7 +22,7 @@ const MentorsSection = () => {
 
       {/* Mentor Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {mentors.map((mentor, index) => (
+        {Bestmentors.map((mentor, index) => (
           <div
             key={index}
             className="bg-white rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-2 p-6 text-center"
